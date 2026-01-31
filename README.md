@@ -35,7 +35,7 @@ We reduce documentation burden so doctors can focus on **clinical care, not pape
    Basic details captured: Name, Age, Gender, Email, Phone, Allergies
 
 2. **Voice Prescription Input**  
-   Doctor speaks naturally using voice dictation (Wispr Flow)
+   Doctor speaks naturally using **Whisper Flow** voice typing
 
 3. **AI Structuring**  
    AI extracts:
@@ -48,32 +48,63 @@ We reduce documentation burden so doctors can focus on **clinical care, not pape
    System formats a clean, professional digital prescription
 
 5. **Patient Notification**  
-   Prescription can be shared via email (WhatsApp integration ready)
+   Prescription can be saved, printed, or shared digitally
 
 ---
 
 ## 🧠 Technology Stack
 
-### 🖥 Frontend
-- React.js  
-- Axios (API calls)  
-- Voice input via **Wispr Flow** (OS-level speech-to-text)
+HealthFlow AI is designed to be **lightweight, fast, and deployable without heavy hospital IT setup**.
 
-### 🛠 Backend
-- Node.js + Express.js  
-- OpenAI API (LLM for medical text structuring)  
-- PDFKit (Prescription PDF generation)  
-- Nodemailer (Email delivery)  
-- WhatsApp Cloud API (integration ready)
+### 🖥 Core Frontend Architecture
 
-### 🤖 AI Layer
-- LLM prompted and guided using:
-  - Sample prescription formats  
-  - Medication dosage patterns  
-  - Clinical instruction phrasing  
-  - Structured JSON output schema  
+- **React 19** – Modern component-based UI with efficient rendering  
+- **TypeScript** – Strict type safety for patient data and prescription schemas  
+- **ES Modules (ESM)** – Dependencies loaded via `esm.sh` for a build-less browser-based workflow  
 
-The AI acts as a **documentation assistant**, not a decision-maker.
+---
+
+### 🤖 AI & Intelligence
+
+- **Google Gemini API (gemini-3-flash-preview)**  
+  - Clinical extraction from voice transcripts into structured JSON  
+  - Medical summarization of past visits  
+  - Reasoning for formatting prescriptions and follow-up advice  
+
+The AI acts as a **clinical documentation assistant**, not a decision-maker.
+
+---
+
+### 🎨 UI/UX & Design
+
+- **Tailwind CSS** – Professional “Clinical Blue” theme and responsive layouts  
+- **Lucide React** – Medical and workflow icons (Stethoscope, Mic, ShieldCheck, etc.)  
+- **Inter Font Family** – High legibility for medical environments  
+
+---
+
+### 💾 Data & Infrastructure
+
+- **Web Storage API (LocalStorage)**  
+  Stores patient history and UPID records locally on the doctor’s device (no heavy backend required for MVP)
+
+- **Native Browser Print Engine**  
+  Generates professional medical PDFs directly from the app
+
+---
+
+### 🌐 Standard Web APIs Used
+
+- `fetch` with retry/backoff for reliable AI communication  
+- `navigator.clipboard` for fast text handling  
+- Standard DOM events for smooth integration with external voice tools  
+
+---
+
+### 🎙 Workflow Integration
+
+- **Whisper Flow (External Voice Tool)**  
+  The app uses standard HTML `<textarea>` elements so doctors can use system-level voice typing (Ctrl + Win) to dictate prescriptions directly into the app.
 
 ---
 
@@ -82,26 +113,22 @@ The AI acts as a **documentation assistant**, not a decision-maker.
 - ✅ Voice → Structured Prescription  
 - ✅ Patient history display  
 - ✅ Professional prescription PDF generation  
-- ✅ Email delivery to patients  
+- ✅ Works without hospital backend integration  
 - ✅ End-to-end working demo  
 
 ---
 
 ## 🔮 Future Scope
 
-- Auto-fetch patient history using health IDs (ABDM integration)  
 - Drug interaction and allergy alerts  
-- Lab & radiology report auto-ingestion  
-- AI-powered clinical summaries for follow-ups  
-- Hospital EMR integration  
+- Lab & radiology report integration  
+- Multi-doctor access and analytics dashboard  
 
 ---
 
 ## 🎥 Product Demo
 
 👉 **Demo Link:** _[Add your video / hosted app / PPT link here]_  
-
-*(Example: Loom video, YouTube unlisted link, or deployed app URL)*
 
 ---
 
@@ -116,7 +143,7 @@ The AI acts as a **documentation assistant**, not a decision-maker.
 ## 💰 Business Model (Planned)
 
 **B2B SaaS for hospitals and clinics**  
-Pricing: ₹50,000 – ₹2,00,000 per month per hospital (based on size)
+₹50,000 – ₹2,00,000 per month per hospital (based on size)
 
 ---
 
