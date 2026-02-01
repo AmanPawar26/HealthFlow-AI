@@ -3,7 +3,7 @@
 
 ---
 
-## 🚨 Problem
+##  Problem
 
 Healthcare consultations are slowed by **fragmented and manual records**.
 
@@ -15,21 +15,21 @@ Doctors spend valuable consultation time on **documentation**, not decision-maki
 
 ---
 
-## 💡 Solution – HealthFlow AI
+##  Solution – HealthFlow AI
 
 **HealthFlow AI** is an AI-powered clinical copilot that helps doctors:
 
-- 🎤 Speak naturally during consultation  
-- 🧠 Instantly convert voice → structured digital prescription  
-- 📄 Generate professional prescription PDFs  
-- 📨 Share prescriptions with patients digitally  
-- 📚 View patient history during consultation  
+-  Speak naturally during consultation  
+-  Instantly convert voice → structured digital prescription  
+-  Generate professional prescription PDFs  
+-  Share prescriptions with patients digitally  
+-  View patient history during consultation  
 
 We reduce documentation burden so doctors can focus on **clinical care, not paperwork**.
 
 ---
 
-## ⚙️ How It Works (MVP Flow)
+## How It Works (MVP Flow)
 
 1. **Patient Registration**  
    Basic details captured: Name, Age, Gender, Email, Phone, Allergies
@@ -52,11 +52,11 @@ We reduce documentation burden so doctors can focus on **clinical care, not pape
 
 ---
 
-## 🧠 Technology Stack
+##  Technology Stack
 
 HealthFlow AI is designed to be **lightweight, fast, and deployable without heavy hospital IT setup**.
 
-### 🖥 Core Frontend Architecture
+###  Core Frontend Architecture
 
 - **React 19** – Modern component-based UI with efficient rendering  
 - **TypeScript** – Strict type safety for patient data and prescription schemas  
@@ -64,7 +64,7 @@ HealthFlow AI is designed to be **lightweight, fast, and deployable without heav
 
 ---
 
-### 🤖 AI & Intelligence
+###  AI & Intelligence
 
 - **Google Gemini API (gemini-3-flash-preview)**  
   - Clinical extraction from voice transcripts into structured JSON  
@@ -75,7 +75,7 @@ The AI acts as a **clinical documentation assistant**, not a decision-maker.
 
 ---
 
-### 🎨 UI/UX & Design
+###  UI/UX & Design
 
 - **Tailwind CSS** – Professional “Clinical Blue” theme and responsive layouts  
 - **Lucide React** – Medical and workflow icons (Stethoscope, Mic, ShieldCheck, etc.)  
@@ -83,7 +83,7 @@ The AI acts as a **clinical documentation assistant**, not a decision-maker.
 
 ---
 
-### 💾 Data & Infrastructure
+###  Data & Infrastructure
 
 - **Web Storage API (LocalStorage)**  
   Stores patient history and UPID records locally on the doctor’s device (no heavy backend required for MVP)
@@ -93,7 +93,7 @@ The AI acts as a **clinical documentation assistant**, not a decision-maker.
 
 ---
 
-### 🌐 Standard Web APIs Used
+###  Standard Web APIs Used
 
 - `fetch` with retry/backoff for reliable AI communication  
 - `navigator.clipboard` for fast text handling  
@@ -108,17 +108,17 @@ The AI acts as a **clinical documentation assistant**, not a decision-maker.
 
 ---
 
-## 🎯 Key Features in MVP
+##  Key Features in MVP
 
-- ✅ Voice → Structured Prescription  
-- ✅ Patient history display  
-- ✅ Professional prescription PDF generation  
-- ✅ Works without hospital backend integration  
-- ✅ End-to-end working demo  
+-  Voice → Structured Prescription  
+-  Patient history display  
+-  Professional prescription PDF generation  
+-  Works without hospital backend integration  
+-  End-to-end working demo  
 
 ---
 
-## 🔮 Future Scope
+##  Future Scope
 
 - Drug interaction and allergy alerts  
 - Lab & radiology report integration  
@@ -126,13 +126,13 @@ The AI acts as a **clinical documentation assistant**, not a decision-maker.
 
 ---
 
-## 🎥 Product Demo
+##  Product Demo
 
-👉 **Demo Link:** _[https://score-arc-32835846.figma.site/]  
+ **Demo Link:** _[https://score-arc-32835846.figma.site/]  
 
 ---
 
-## 👥 Who It’s For
+##  Who It’s For
 
 - OPD-heavy hospitals  
 - Clinics with high patient load  
@@ -140,13 +140,13 @@ The AI acts as a **clinical documentation assistant**, not a decision-maker.
 
 ---
 
-## 💰 Business Model (Planned)
+##  Business Model (Planned)
 
 **B2B SaaS for hospitals and clinics**  
 ₹50,000 – ₹2,00,000 per month per hospital (based on size)
 
 ---
 
-## 🧑‍⚕️ Vision
+##  Vision
 
 To build an **AI assistant layer for clinical workflows** that reduces doctor burnout and makes healthcare documentation effortless.
