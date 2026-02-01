@@ -128,7 +128,7 @@ The AI acts as a **clinical documentation assistant**, not a decision-maker.
 
 ## 🎥 Product Demo
 
-👉 **Demo Link:** _[Add your video / hosted app / PPT link here]_  
+👉 **Demo Link:** _[https://score-arc-32835846.figma.site/]  
 
 ---
 
